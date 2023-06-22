@@ -63,6 +63,86 @@ public abstract class Vehiculo {
     }
 }
 
+class Coche extends Vehiculo {
+    public Coche(String color, String marca, String modelo, int año) {
+        super(color, marca, modelo, año);
+    }
+
+    @Override
+    public void acelerar() {
+        System.out.println("El coche está acelerando.");
+    }
+
+    @Override
+    public void frenar() {
+        System.out.println("El coche está frenando.");
+    }
+}
+
+class Motocicleta extends Vehiculo {
+    public Motocicleta(String color, String marca, String modelo, int año) {
+        super(color, marca, modelo, año);
+    }
+
+    @Override
+    public void acelerar() {
+        System.out.println("La motocicleta está acelerando.");
+    }
+
+    @Override
+    public void frenar() {
+        System.out.println("La motocicleta está frenando.");
+    }
+}
+
+class Camion extends Vehiculo {
+    public Camion(String color, String marca, String modelo, int año) {
+        super(color, marca, modelo, año);
+    }
+
+    @Override
+    public void acelerar() {
+        System.out.println("El camión está acelerando.");
+    }
+
+    @Override
+    public void frenar() {
+        System.out.println("El camión está frenando.");
+    }
+}
+
+class Lancha extends Vehiculo {
+    public Lancha(String color, String marca, String modelo, int año) {
+        super(color, marca, modelo, año);
+    }
+
+    @Override
+    public void acelerar() {
+        System.out.println("La lancha está acelerando.");
+    }
+
+    @Override
+    public void frenar() {
+        System.out.println("La lancha está frenando.");
+    }
+}
+
+class Crucero extends Vehiculo {
+    public Crucero(String color, String marca, String modelo, int año) {
+        super(color, marca, modelo, año);
+    }
+
+    @Override
+    public void acelerar() {
+        System.out.println("El crucero está acelerando.");
+    }
+
+    @Override
+    public void frenar() {
+        System.out.println("El crucero está frenando.");
+    }
+}
+
 public enum TipoVehiculo {
     COCHE,
     MOTOCICLETA,
